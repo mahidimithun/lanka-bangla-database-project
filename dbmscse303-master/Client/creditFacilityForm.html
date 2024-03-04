@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Bootstrap css -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+        <link rel="stylesheet" href="/style.css">
+        <style>
+            body {
+                background-color: rgb(255, 255, 255);
+
+            }
+           .divbg {
+                background: rgba(216, 228, 228, 0.3);
+                
+            }
+            .img{
+                height: 100px;
+                
+            }
+            .boText{
+                text-align: center;
+                color: green;
+            }
+            #more {display: none;}
+        </style>
+        <title>Credit Facility From</title>
+    </head>
+    <body>
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">Lanka Bangla</a>
+            <button class="navbar-toggler" type="" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+              aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a class="nav-item nav-link" href="index.html">Home</a>
+                <!-- <a class="nav-item nav-link" href="accountOpeningForm.html">Account Opening Form</a> -->
+                <!-- <a class="nav-item nav-link" href="boForm.html">BO Form</a> -->
+                <!-- <a class="nav-item nav-link" href="creditFacilityForm.html">Credit Facility Form</a> -->
+                <a class="nav-item nav-link" href="eftForm.html">EFT Form</a>
+                <a class="nav-item nav-link" href="kyc.html">KYC Profile Form</a>
+                <a class="nav-item nav-link" href="valueAddedService.html">Value Added Service Form</a>
+                <a class="nav-item nav-link" href="#">Logout</a>
+              </div>
+            </div>
+          </nav>
+               <form action="creditFacility.php" method="post">
+                
+                    <div class="container border border-danger rounded mt-3">
+                      <h3 class="boText">Credit Facility Form</h3>
+                    </div>
+                    <div class="container border border-success rounded mt-4">
+                        <div class="container mt-2"></div>
+                
+                        <div class="form-group row">
+                            <label for="date" class="col-sm-1 col-form-label">Date</label>
+                            <div class="col-sm-7">
+                                <input type="date" class="form-control col-sm-4" id="date" >
+                            </div>
+                        </div>
+                
+                
+                
+                        Cheif Executive Officer </br>
+                        LankaBangla Securities Ltd</br>
+                        9/E, Motijheel C/A, Dhaka<br><br>
+                
+                        Dear Sir<br><br>
+                
+                        I/We, <input type="text" name="name" value="" >
+                        Client Code<input type="number" name="code"> would like to avail the credit facility from your company for purchasing shares/ securities through
+                
+                        your broker house.<br><br>
+                
+                        I furnish herewith the necessary information/documents for your kind perusal.<br><br>
+                
+                        Your faithfully <br><br><br>
+                        <label for="name">Name: </label>
+                        <input type="text" name="name"> <br>
+                        <label for="code" >Code: </label>
+                        <input type="number" name="code" id="code"> <br>
+                        <label for="bo">Bo:</label>
+                        <input type="number" name="bo" id="bo"> <br>
+                
+                        <button type="button" class="btn btn-outline-success float-right mt-2">Apply</button>                
+                    </div>   
+               </form>             
+                                    
+           
+        <!-- Bootstrap JS bundle -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+            crossorigin="anonymous"></script>
+
+    </body>
+</html>

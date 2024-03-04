@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewpo6t" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="/style.css">
+    <style>
+        body {
+            background-color: rgb(255, 255, 255);
+
+        }
+
+        .divbg {
+            background: rgba(216, 228, 228, 0.3);
+
+        }
+
+        .img {
+            height: 100px;
+
+        }
+
+        .boText {
+            text-align: center;
+            color: green;
+        }
+
+        #more {
+            display: none;
+        }
+    </style>
+
+    <title>EFT From</title>
+</head>
+
+<body>
+    <!-- <div class="container-fluid h-100">
+            <div class="row h-100">
+                <div class="col-2 bg-primary">
+                    <div class="logo">
+                        <img src="../lbslogo.png" width="100%" height="100%">
+                    </div>
+                    <div class="menu">
+                        <a class="menu-link" href="index.html">Home</a>
+                        <a class="menu-link" href="accountOpeningForm.html">Account Opening Form</a>
+                        <a class="menu-link" href="boForm.html">BO Form</a>
+                        <a class="menu-link" href="creditFacilityForm.html">Credit Facility Form</a>
+                        <a class="menu-link" href="eftForm.html">EFT Form</a>
+                        <a class="menu-link" href="kycProfileForm.html">KYC Profile Form</a>
+                        <a class="menu-link" href="valueAddedService.html">Value Added Service Form</a>
+                        <a class="menu-link" href="#">Logout</a>
+                    </div>
+                </div>
+                <div class="col py-4"> -->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Lanka Bangla</a>
+        <button class="navbar-toggler" type="" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link" href="index.html">Home</a>
+                <!-- <a class="nav-item nav-link" href="accountOpeningForm.html">Account Opening Form</a> -->
+                <!-- <a class="nav-item nav-link" href="boForm.html">BO Form</a> -->
+                <!-- <a class="nav-item nav-link" href="creditFacilityForm.html">Credit Facility Form</a> -->
+                <!-- <a class="nav-item nav-link" href="eftForm.html">EFT Form</a> -->
+                <a class="nav-item nav-link" href="kyc.html">KYC Profile Form</a>
+                <a class="nav-item nav-link" href="valueAddedService.html">Value Added Service Form</a>
+                <a class="nav-item nav-link" href="#">Logout</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- <h1>EFT Form</h1> -->
+    <div class="container border border-danger rounded mt-3">
+        <h3 class="boText">EFT Form</h3>
+    </div>
+
+    <form action="eftForm.php" method="post">
+        <!-- <div class="container border border-primary mt-1 divbg">
+                          <label for="bankName">Bank Name:</label>
+                          <input type="bankName" class="form-control" id="bankName" placeholder="Enter Bank Name" >
+                        </div>
+                        <div class="container border border-primary mt-1 divbg">
+                          <label for="branchName">Branch Name:</label>
+                          <input type="branchName" class="form-control" id="branchName" placeholder="Enter Branch Name" >
+                        </div> -->
+                        <!-- product type -->
+                        <h4>Product Type</h4>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="ptype[]" value="LBSL_Premium"
+                                id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                LBSL Premium
+                            </label>
+                        </div>
+                        <div>
+                            <input class="form-check-input" type="checkbox" name="ptype[]" value="LBSL_IPO" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                LBSL IPO
+                            </label>
+                        </div>
+                        <div>
+                            <input class="form-check-input" type="checkbox" name="ptype[]" value="LBSL_Halal" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                LBSL Halal
+                            </label>
+                        </div>
+                        <div>
+                            <input class="form-check-input" type="checkbox" name="ptype[]" value="LBSL_Easy_Investment_Plan"
+                                id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                LBSL Easy Investment Plan
+                            </label>
+                        </div>
+                        <div>
+                            <input class="form-check-input" type="checkbox" name="ptype[]" value="LBSL_Beginner"
+                                id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                LBSL Beginner
+                            </label>
+                        </div>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text">
+                                    <input type="checkbox" aria-label="Checkbox for following text input">
+                                </div>
+                            </div>
+                            <input type="text" class="form-control" aria-label="Text input with checkbox" placeholder="Others:">
+                        </div>
+                        <!-- <div class="form-group mt-3">
+                            <label class="mr-2">Upload First Applicant Signature Image:</label>
+                            <input type="file" name="file">
+                        </div> -->
+
+
+        <div>
+            <p>
+                <br><b> I/We certify that I/We am/are the owner or authorized signatory for this account. <br>
+                    I have also read and agree to the Terms and Conditions that follow.</b>
+            </p>
+            <h5>TERMS AND CONDITIONS</h5>
+            <p>
+                1. LBSL will transfer funds electronically from the customer’s trading account to customer Bank account
+                registers on this EFT
+                Enrollment Form <br>
+                2. It is customer’s sole responsibility to ensure that his bank account information is correct and
+                accurate. LBSL is not responsible
+                for any payment processing errors or fees incurred if you do not provide accurate account information.
+                <br>
+                3. LBSL reserves the right to reject EFT Enrollment Application Form. <br>
+                4. Any changes made to this EFT Enrollment Form must be updated in person at the LBSL office. This may
+                require new EFT
+                enrollment application process. <br>
+                5. Terms and conditions may be changed without prior notice due to the amendment of relevant regulatory
+                policy by the pertinent
+                Government regulatory body such as Securities and Exchange Commission. <br>
+                6. EFT services will be discontinued if: <br>
+                The registered account is not active or closed. <br>
+                The registered account is not active or closed. <br>
+
+                7. All questions and concerns regarding the EFT service should be directed to the CEO & Director of LBSL
+                <br>
+                8. LBSL is not responsible for technical error or difficulties, beyond LBSL’s control, that may arise
+                during the process of Electronic
+                Fund Transfer. <br>
+                9. The account holder has to annex copy of cheque leaf of the account or bank statement or bank
+                certificate of the account with
+                EFT FORM. <br>
+            </p>
+            <!-- <h4>Product Type</h4>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" name="ptype[]" value="LBSL_Premium"
+                    id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                    LBSL Premium
+                </label>
+            </div>
+            <div>
+                <input class="form-check-input" type="checkbox" name="ptype[]" value="LBSL_IPO" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                    LBSL IPO
+                </label>
+            </div>
+            <div>
+                <input class="form-check-input" type="checkbox" name="ptype[]" value="LBSL_Halal" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                    LBSL Halal
+                </label>
+            </div>
+            <div>
+                <input class="form-check-input" type="checkbox" name="ptype[]" value="LBSL_Easy_Investment_Plan"
+                    id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                    LBSL Easy Investment Plan
+                </label>
+            </div>
+            <div>
+                <input class="form-check-input" type="checkbox" name="ptype[]" value="LBSL_Beginner"
+                    id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                    LBSL Beginner
+                </label>
+            </div>
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <div class="input-group-text">
+                        <input type="checkbox" aria-label="Checkbox for following text input">
+                    </div>
+                </div>
+                <input type="text" class="form-control" aria-label="Text input with checkbox" placeholder="Others:">
+            </div>
+            <div class="form-group mt-3">
+                <label class="mr-2">Upload First Applicant Signature Image:</label>
+                <input type="file" name="file">
+            </div> -->
+            <button type="coutinue" class="btn btn-dark">Coutinue</button>
+        </div>
+    </form>
+    <!-- </div> -->
+    <!-- </div> -->
+    <!-- </div> -->
+
+    <!-- Bootstrap JS bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

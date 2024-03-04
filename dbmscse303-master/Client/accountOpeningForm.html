@@ -1,0 +1,1007 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
+  <!-- Bootstrap css -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="/style.css">
+  <style>
+    body {
+      background-color: rgb(255, 255, 255);
+
+    }
+
+    .divbg {
+      background: rgba(216, 228, 228, 0.3);
+
+    }
+
+    .img {
+      height: 100px;
+
+    }
+
+    .boText {
+      text-align: center;
+      color: green;
+    }
+
+    #more {
+      display: none;
+    }
+  </style>
+  <title>Customer Account Opening Form</title>
+</head>
+
+<body>
+  <!-- <div class="container-fluid h-100">
+    <div class="row h-100">
+      <div class="col-2 bg-primary">
+        <div class="logo">
+          <img src="/lbslogo.png" width="100%" height="100%">
+        </div>
+        <div class="menu">
+          <a class="menu-link" href="index.html">Home</a>
+          <a class="menu-link" href="accountOpeningForm.html">Account Opening Form</a>
+          <a class="menu-link" href="boForm.html">BO Form</a>
+          <a class="menu-link" href="creditFacilityForm.html">Credit Facility Form</a>
+          <a class="menu-link" href="eftForm.html">EFT Form</a>
+          <a class="menu-link" href="kycProfileForm.html">KYC Profile Form</a>
+          <a class="menu-link" href="valueAddedService.html">Value Added Service Form</a>
+          <a class="menu-link" href="#">Logout</a>
+        </div>
+      </div> -->
+
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Lanka Bangla</a>
+    <button class="navbar-toggler" type="" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+      aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-item nav-link" href="index.html">Home</a>
+        <!-- <a class="nav-item nav-link" href="accountOpeningForm.html">Account Opening Form</a> -->
+        <a class="nav-item nav-link" href="boForm.html">BO Form</a>
+        <a class="nav-item nav-link" href="creditFacilityForm.html">Credit Facility Form</a>
+        <a class="nav-item nav-link" href="eftForm.html">EFT Form</a>
+        <a class="nav-item nav-link" href="kyc.html">KYC Profile Form</a>
+        <a class="nav-item nav-link" href="valueAddedService.html">Value Added Service Form</a>
+        <a class="nav-item nav-link" href="signin.html">Logout</a>
+      </div>
+    </div>
+  </nav>
+   <!-- end navbar -->
+  <!-- <div class="container">
+            <img class="img" src="/lbslogo.png" class="img-fluid" height="100px" alt="Responsive image">
+        </div> -->
+  <!-- <div class="col py-4"> -->
+  <div class="container border border-danger rounded mt-3">
+    <h3 class="boText">Customer Account Opening Form</h3>
+  </div>
+
+
+  <form action="connection.php" method="POST">
+
+    <!-- account and client type -->
+
+    <!-- <div class="container border border-primary d-flex justify-content-between mt-3 divbg" >
+                  <div>
+                      <h6>Operation Type</h6>
+                      <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="individual">
+                          <label class="form-check-label" for="defaultCheck1">Individual</label>
+                      </div>
+                      <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="joint">
+                          <label class="form-check-label" for="defaultCheck2">Joint</label>
+                      </div>
+                      <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="company">
+                          <label class="form-check-label" for="defaultCheck3">Company</label>
+                      </div>
+                  </div>
+
+                  <div>
+                      <h6>Account Type</h6>
+                      <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="cash">
+                          <label class="form-check-label" for="defaultCheck1">Cash</label>
+                      </div>
+                      <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="margin">
+                          <label class="form-check-label" for="defaultCheck2">Margin</label>
+                      </div>
+                  </div>
+                  <div>
+                      <h6>Client Type</h6>
+                      <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="regular">
+                          <label class="form-check-label" for="defaultCheck1">Regular</label>
+                      </div>
+                      <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="clearing">
+                          <label class="form-check-label" for="defaultCheck2">Clearing</label>
+                      </div>
+                  </div>
+
+              </div> -->
+    <!-- first appicant info (readonly)-->
+    <div class="container border border-primary mt-1 divbg">
+      <h6>First Account Holder</h6>
+      <select class="form-select" name="branch" aria-label="Default select example">
+        <option selected>Select Branch</option>
+        <option value="agrabad">Agrabad</option>
+        <option value="banani">Banani</option>
+        <option value="barisal">Barisal</option>
+        <option value="comilla">Comilla</option>
+        <option value="dinajpur">Dinajpur</option>
+        <option value="dhanmondi">Dhanmondi</option>
+        <option value="lakshmipur">Lakshmipur</option>
+        <option value="manikganj">Manikganj</option>
+        <option value="principle">Principle</option>
+        <option value="sylhet">Sylhet</option>
+        <option value="online">online</option>
+      </select>
+      <div class="form-group row">
+        <label for="clientname" class="col-sm-2 col-form-label">Client Name Title</label>
+        <div class="col-sm-7">
+          <input type="text" name="ctitle" class="form-control" id="clientname" placeholder="Enter Name Title">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="clientname" class="col-sm-2 col-form-label">Client Name</label>
+        <div class="col-sm-7">
+          <input type="text" class="form-control" name="cname" id="clientname" placeholder="Enter Client Name">
+        </div>
+      </div>
+
+      <div class="form-group row">
+        <label for="fatherName" class="col-sm-2 col-form-label">Father's Name</label>
+        <div class="col-sm-7">
+          <input type="text" class="form-control" name="cfatherName" id="fatherName" placeholder="Enter Father's Name">
+        </div>
+      </div>
+
+      <div class="form-group row">
+        <label for="mother" class="col-sm-2 col-form-label">Mother's Name</label>
+        <div class="col-sm-7">
+          <input type="text" class="form-control" name="cmotherName" id="mother" placeholder="Enter Mother's Name">
+        </div>
+      </div>
+
+      <div class="form-group row">
+        <label for="spouse" class="col-sm-2 col-form-label">Spouse Name</label>
+        <div class="col-sm-7">
+          <input type="text" class="form-control" name="cspouseName" id="spouse" placeholder="Enter Spouse Name">
+        </div>
+      </div>
+
+      <div class="form-group row">
+        <label for="mobile" class="col-sm-2 col-form-label">Mobile</label>
+        <div class="col-sm-7">
+          <input type="text" class="form-control" name="cmobile" id="mobile" placeholder="Mobile No.">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="cphone" class="col-sm-2 col-form-label">Phone</label>
+        <div class="col-sm-7">
+          <input type="text" class="form-control" name="cphone" id="Phone" placeholder="Phone No.">
+        </div>
+      </div>
+
+      <div class="form-group row">
+        <label for="email" class="col-sm-2 col-form-label">Email</label>
+        <div class="col-sm-7">
+          <input type="text" class="form-control" name="cemail" id="email" placeholder="Email@">
+        </div>
+      </div>
+
+      <div class="form-group row">
+        <label for="etin" class="col-sm-2 col-form-label">E-Tin</label>
+        <div class="col-sm-7">
+          <input type="text" class="form-control" name="cetin" id="etin" placeholder="E-Tin no.">
+        </div>
+      </div>
+      <!-- NID -->
+      <!-- <div class="form-group row">
+                      <label for="Nid" class="col-sm-2 col-form-label">NID No.</label>
+                      <div class="col-sm-7">
+                        <input type="text" class="form-control" id="nid" placeholder="Nid ">
+                      </div>
+                    </div> -->
+
+      <div class="form-group row">
+        <label for="occupation" class="col-sm-2 col-form-label">Occupation</label>
+        <div class="col-sm-7">
+          <input type="text" class="form-control" name="coccupation" id="occupation" placeholder="Occupation">
+        </div>
+      </div>
+
+      <!-- nationality -->
+      <!-- <div class="form-group row">
+                      <label for="nationality" class="col-sm-2 col-form-label">Nationality</label>
+                      <div class="col-sm-7">
+                        <input type="text" class="form-control" id="nationality" placeholder="Nationality">
+                      </div>
+                    </div> -->
+
+      <div class="form-group row">
+        <label for="gender" class="col-sm-2 col-form-label">Gender</label>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" name="gender" type="radio" value="male" id="male">
+          <label class="form-check-label" for="gender">Male </label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" name="gender" type="radio" value="female" id="female">
+          <label class="form-check-label" for="female">Female</label>
+        </div>
+      </div>
+
+
+      <div class="form-group row">
+        <label for="dob" class="col-sm-2 col-form-label">Date of Birth</label>
+        <div class="col-sm-7">
+          <input type="date" class="form-control" name="cdob" id="dob">
+        </div>
+      </div>
+
+      <!-- Address -->
+      <div>
+
+        <h6>Address</h6>
+        <div class="form-group row">
+          <label for="Address" class="col-sm-2 col-form-label">Present Address</label>
+          <div class="col-sm-7">
+            <textarea name="cpreaddress" id="" cols="30" rows="5"></textarea>
+          </div>
+        </div>
+        <!-- 
+                    <div class="form-group row">
+                      <label for="jointCountry" class="col-sm-2 col-form-label">Country</label>
+                      <div class="col-sm-7">
+                        <input type="text" class="form-control" id="jointCountry" placeholder="">
+                      </div>
+                      </div>
+
+                    <div class="form-group row">
+                      <label for="jointCity" class="col-sm-2 col-form-label">City</label>
+                      <div class="col-sm-7">
+                        <input type="text" class="form-control" id="jointCity" placeholder="">
+                      </div>
+                      </div>
+
+                      <div class="form-group row">
+                          <label for="jointState" class="col-sm-2 col-form-label">State</label>
+                          <div class="col-sm-7">
+                            <input type="text" class="form-control" id="jointState" placeholder="">
+                          </div>
+                          </div>
+
+                          <div class="form-group row">
+                              <label for="jointPostCode" class="col-sm-2 col-form-label">Post Code</label>
+                              <div class="col-sm-7">
+                                <input type="text" class="form-control" id="jointPostCode" placeholder="">
+                              </div>
+                              </div> 
+                            -->
+        <div class="form-group row">
+          <label for="perAddress" class="col-sm-2 col-form-label"> Permanent Address</label>
+          <div class="col-sm-7">
+            <textarea name="cperaddress" id="" cols="30" rows="5"></textarea>
+          </div>
+        </div>
+
+      </div>
+      <div>
+        <label for="primaryPic ">Upload Picture</label>
+        <div class="custom-file col-sm-4">
+
+          <input type="file" class="custom-file-input" name="cphoto" id="validatedCustomFile">
+          <label class="custom-file-label" for="validatedCustomFile">Choose file...</label>
+          <div class="invalid-feedback">Example invalid custom file feedback</div>
+        </div>
+        <label for="primarySig">Upload Signature</label>
+        <div class="custom-file col-sm-4">
+
+          <input type="file" class="custom-file-input" name="csignature" id="validatedCustomFile">
+          <label class="custom-file-label" for="validatedCustomFile">Choose file...</label>
+          <div class="invalid-feedback">Example invalid custom file feedback</div>
+        </div>
+
+      </div>
+      <!-- 
+                    <div class="form-group row">
+                      <label for="parCountry" class="col-sm-2 col-form-label">Country</label>
+                      <div class="col-sm-7">
+                        <input type="text" class="form-control" id="parCountry" placeholder="">
+                      </div>
+                      </div>
+
+                    <div class="form-group row">
+                      <label for="parCity" class="col-sm-2 col-form-label">City</label>
+                      <div class="col-sm-7">
+                        <input type="text" class="form-control" id="parCity" placeholder="">
+                      </div>
+                      </div>
+
+                      <div class="form-group row">
+                          <label for="parState" class="col-sm-2 col-form-label">State</label>
+                          <div class="col-sm-7">
+                            <input type="text" class="form-control" id="parState" placeholder="">
+                          </div>
+                          </div>
+
+                          <div class="form-group row">
+                              <label for="parPostCode" class="col-sm-2 col-form-label">Post Code</label>
+                              <div class="col-sm-7">
+                                <input type="text" class="form-control" id="parPostCode" placeholder="">
+                              </div>
+                              </div> -->
+    </div>
+
+    <!-- end 1st account info -->
+
+
+    <!-- second appicant info -->
+    <form action="jointClient.php" method="POST">
+      <div class="container border border-primary mt-1 divbg">
+        <h6>Joint Account Holder</h6>
+        <div class="form-group row">
+          <label for="clientTitle" class="col-sm-2 col-form-label">Client Name Title</label>
+          <div class="col-sm-7">
+            <input type="text" class="form-control" name="jtitle" id="clientname" placeholder="Enter Name Title">
+          </div>
+        </div>
+
+        <div class="form-group row">
+          <label for="secondClientname" class="col-sm-2 col-form-label">Joint Client Name</label>
+          <div class="col-sm-7">
+            <input type="text" class="form-control" name="jname" id="secondClientclientname"
+              placeholder="Joint Client Name">
+          </div>
+        </div>
+
+        <div class="form-group row">
+          <label for="secondClientfatherName" class="col-sm-2 col-form-label">Father's Name</label>
+          <div class="col-sm-7">
+            <input type="text" class="form-control" name="jfathername" id="secondClientfatherName"
+              placeholder="Father's Name">
+          </div>
+        </div>
+
+        <div class="form-group row">
+          <label for="secondClientmother" class="col-sm-2 col-form-label">Mother's Name</label>
+          <div class="col-sm-7">
+            <input type="text" class="form-control" name="jmothername" id="secondClientmother"
+              placeholder="Mother's Name">
+          </div>
+        </div>
+
+        <div class="form-group row">
+          <label for="secondClientspouse" class="col-sm-2 col-form-label">Spouse Name</label>
+          <div class="col-sm-7">
+            <input type="text" class="form-control" name="jspousename" id="secondClientspouse"
+              placeholder="Spouse Name">
+          </div>
+        </div>
+
+        <div class="form-group row">
+          <label for="secondClientmobile" class="col-sm-2 col-form-label">Mobile</label>
+          <div class="col-sm-7">
+            <input type="text" class="form-control" name="jmobile" id="secondClientmobile" placeholder="Mobile No.">
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="secondClientPhone" class="col-sm-2 col-form-label">Phone</label>
+          <div class="col-sm-7">
+            <input type="text" class="form-control" name="jphone" id="secondClientPhone" placeholder="Phone No.">
+          </div>
+        </div>
+
+        <div class="form-group row">
+          <label for="secondClientemail" class="col-sm-2 col-form-label">Email</label>
+          <div class="col-sm-7">
+            <input type="text" class="form-control" name="jemail" id="secondClientemail" placeholder="Email@">
+          </div>
+        </div>
+
+        <div class="form-group row">
+          <label for="secondClientetin" class="col-sm-2 col-form-label">E-Tin</label>
+          <div class="col-sm-7">
+            <input type="text" class="form-control" name="jetin" id="secondClientetin" placeholder="E-Tin No.">
+          </div>
+        </div>
+
+        <!-- NID -->
+        <div class="form-group row">
+          <label for="secondClientNid" class="col-sm-2 col-form-label">NID No.</label>
+          <div class="col-sm-7">
+            <input type="text" class="form-control" name="jnid" id="secondClientNid" placeholder="Nid ">
+          </div>
+        </div>
+
+        <div class="form-group row">
+          <label for="secondClientOccupation" class="col-sm-2 col-form-label">Occupation</label>
+          <div class="col-sm-7">
+            <input type="text" class="form-control" name="joccupation" id="secondClientOccupation"
+              placeholder="Occupation">
+          </div>
+        </div>
+        <!-- <div class="form-group row">
+                   <label for="secondClientCity" class="col-sm-2 col-form-label">City</label>
+                   <div class="col-sm-7">
+                     <input type="text"  class="form-control" id="secondClientCity" placeholder="City">
+                   </div>
+                 </div>
+ 
+                 <div class="form-group row">
+                   <label for="secondClientPostCode" class="col-sm-2 col-form-label">Post Code</label>
+                   <div class="col-sm-7">
+                     <input type="text"  class="form-control" id="secondClientPostCode" placeholder="Post Code">
+                   </div>
+                 </div>
+ 
+                 <div class="form-group row">
+                   <label for="secondClientCountryCode" class="col-sm-2 col-form-label">Country Code</label>
+                   <div class="col-sm-7">
+                     <input type="text"  class="form-control" id="secondClientCountryCode" placeholder="country code">
+                   </div>
+                 </div>
+ 
+                 <div class="form-group row">
+                   <label for="secondClientNid" class="col-sm-2 col-form-label">Country Code</label>
+                   <div class="col-sm-7">
+                     <input type="text"  class="form-control" id="secondClientCountryCode" placeholder="country code">
+                   </div> -->
+
+        <div class="form-group row">
+          <label for="secondClientNationality" class="col-sm-2 col-form-label">Nationality</label>
+          <div class="col-sm-7">
+            <input type="text" class="form-control" name="jnationality" id="secondClientNationality"
+              placeholder="Nationality">
+          </div>
+        </div>
+
+        <div class="form-group row">
+          <label for="secondClientCountryCode" class="col-sm-2 col-form-label">Country Code</label>
+          <div class="col-sm-7">
+            <input type="text" class="form-control" name="jcountrycode" id="secondClientCountryCode"
+              placeholder="Country Code">
+          </div>
+        </div>
+
+        <div class="form-group row">
+          <label for="secondClientGender" class="col-sm-2 col-form-label">Gender</label>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" name="jgender" type="radio" value="male" id="male">
+            <label class="form-check-label" for="male">Male </label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" name="jgender" type="radio" value="female" id="female">
+            <label class="form-check-label" for="female">Female</label>
+          </div>
+        </div>
+
+        <div class="form-group row">
+          <label for="secondClientDob" class="col-sm-2 col-form-label">Date of Birth</label>
+          <div class="col-sm-7">
+            <input type="date" class="form-control" name="jdob" id="secondClientDob">
+          </div>
+        </div>
+
+        <!-- joint client address -->
+
+        <div>
+
+          <h6>Address</h6>
+          <div class="form-group row">
+            <label for="jointAddress" class="col-sm-2 col-form-label">Present Address</label>
+            <div class="col-sm-7">
+              <textarea name="jpreaddress" id="" cols="30" rows="5"></textarea>
+            </div>
+          </div>
+
+          <div class="form-group row">
+            <label for="jointperAddress" class="col-sm-2 col-form-label"> Permanent Address</label>
+            <div class="col-sm-7">
+              <textarea name="jperaddress" id="" cols="30" rows="5"></textarea>
+            </div>
+          </div>
+
+
+          <div class="form-group row">
+            <label for="jointCountry" class="col-sm-2 col-form-label">Country</label>
+            <div class="col-sm-7">
+              <input type="text" class="form-control" name="jcountry" id="jointCountry" placeholder="">
+            </div>
+          </div>
+
+          <div class="form-group row">
+            <label for="jointCity" class="col-sm-2 col-form-label">City</label>
+            <div class="col-sm-7">
+              <input type="text" class="form-control" name="jcity" id="jointCity" placeholder="">
+            </div>
+          </div>
+
+          <!-- <div class="form-group row">
+                           <label for="jointState" class="col-sm-2 col-form-label">State</label>
+                           <div class="col-sm-7">
+                             <input type="text" class="form-control" id="jointState" placeholder="">
+                           </div>
+                           </div> -->
+
+          <div class="form-group row">
+            <label for="jointPostCode" class="col-sm-2 col-form-label">Post Code</label>
+            <div class="col-sm-7">
+              <input type="text" class="form-control" name="jpostcode" id="jointPostCode" placeholder="">
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <label for="primaryPic ">Upload Picture</label>
+          <div class="custom-file col-sm-4">
+
+            <input type="file" class="custom-file-input" name="jpicture" id="validatedCustomFile">
+            <label class="custom-file-label" for="validatedCustomFile">Choose file...</label>
+            <div class="invalid-feedback">Example invalid custom file feedback</div>
+          </div>
+          <label for="primarySig">Upload Signature</label>
+          <div class="custom-file col-sm-4">
+
+            <input type="file" class="custom-file-input" name="jsignature" id="validatedCustomFile">
+            <label class="custom-file-label" for="validatedCustomFile">Choose file...</label>
+            <div class="invalid-feedback">Example invalid custom file feedback</div>
+          </div>
+
+          <label for="jointNid">Upload Nid Photo</label>
+          <div class="custom-file col-sm-4">
+
+            <input type="file" class="custom-file-input" name="jnidpicture" id="validatedCustomFile">
+            <label class="custom-file-label" for="validatedCustomFile">Choose file...</label>
+            <div class="invalid-feedback">Example invalid custom file feedback</div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- end 2nd account info -->
+
+
+      <!-- Authorized Person Information -->
+      <div class="container border border-primary mt-1 divbg">
+        <h6>Authorized Person Information</h6>
+        <div class="form-group row">
+          <label for="clientname" class="col-sm-2 col-form-label">Authorized Person Name Title</label>
+          <div class="col-sm-7">
+            <input type="text" class="form-control" id="clientname" name="atitle"
+              placeholder="Enter Authorized Person Name Title">
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="authname" class="col-sm-2 col-form-label">Authorized Person Name</label>
+          <div class="col-sm-7">
+            <input type="text" class="form-control" name="aname" id="authclientname"
+              placeholder="Authorized Person Name">
+          </div>
+        </div>
+
+        <div class="form-group row">
+          <label for="authfatherName" class="col-sm-2 col-form-label">Father's Name</label>
+          <div class="col-sm-7">
+            <input type="text" class="form-control" name="afatherName" id="authfatherName" placeholder="Father's Name">
+          </div>
+        </div>
+
+        <div class="form-group row">
+          <label for="authmother" class="col-sm-2 col-form-label">Mother's Name</label>
+          <div class="col-sm-7">
+            <input type="text" class="form-control" name="amotherName" id="authmother" placeholder="Mother's Name">
+          </div>
+        </div>
+
+        <div class="form-group row">
+          <label for="authspouse" class="col-sm-2 col-form-label">Spouse Name</label>
+          <div class="col-sm-7">
+            <input type="text" class="form-control" name="aspouseName" id="authspouse" placeholder="Spouse Name">
+          </div>
+        </div>
+
+        <div class="form-group row">
+          <label for="authmobile" class="col-sm-2 col-form-label">Mobile</label>
+          <div class="col-sm-7">
+            <input type="text" class="form-control" name="amobile" id="authmobile" placeholder="Mobile No.">
+          </div>
+        </div>
+
+        <div class="form-group row">
+          <label for="authPhone" class="col-sm-2 col-form-label">Phone</label>
+          <div class="col-sm-7">
+            <input type="text" class="form-control" name="aphone" id="authPhone" placeholder="Phone No.">
+          </div>
+        </div>
+
+        <div class="form-group row">
+          <label for="authemail" class="col-sm-2 col-form-label">Email</label>
+          <div class="col-sm-7">
+            <input type="text" class="form-control" name="aemail" id="authemail" placeholder="Email@">
+          </div>
+        </div>
+
+        <div class="form-group row">
+          <label for="authetin" class="col-sm-2 col-form-label">E-Tin</label>
+          <div class="col-sm-7">
+            <input type="text" class="form-control" name="aetin" id="authetin" placeholder="E-Tin No.">
+          </div>
+        </div>
+
+        <div class="form-group row">
+          <label for="authNid" class="col-sm-2 col-form-label">NID No.</label>
+          <div class="col-sm-7">
+            <input type="text" class="form-control" name="aNid" id="authNid" placeholder="Nid ">
+          </div>
+        </div>
+
+        <div class="form-group row">
+          <label for="authOccupation" class="col-sm-2 col-form-label">Occupation</label>
+          <div class="col-sm-7">
+            <input type="text" class="form-control" name="aOccupation" id="authOccupation" placeholder="Occupation">
+          </div>
+        </div>
+
+        <div class="form-group row">
+          <label for="authNationality" class="col-sm-2 col-form-label">Nationality</label>
+          <div class="col-sm-7">
+            <input type="text" class="form-control" name="aNationality" id="authNationality" placeholder="Nationality">
+          </div>
+        </div>
+
+        <div class="form-group row">
+          <label for="authCountryCode" class="col-sm-2 col-form-label">Country Code</label>
+          <div class="col-sm-7">
+            <input type="text" class="form-control" name="acountrycode" id="authCountryCode" placeholder="Country Code">
+          </div>
+        </div>
+
+        <div class="form-group row">
+          <label for="authGender" class="col-sm-2 col-form-label">Gender</label>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" name="agender" type="radio" value="male" id="male">
+            <label class="form-check-label" for="gender">Male </label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" name="agender" type="radio" value="female" id="female">
+            <label class="form-check-label" for="female">Female</label>
+          </div>
+        </div>
+
+        <div class="form-group row">
+          <label for="authDob" class="col-sm-2 col-form-label">Date of Birth</label>
+          <div class="col-sm-7">
+            <input type="date" class="form-control" name="adob" id="authDob">
+          </div>
+        </div>
+
+        <!-- Address -->
+        <div>
+          <h6>Address</h6>
+          <div class="form-group row">
+            <label for="authAddress" class="col-sm-2 col-form-label">Present Address</label>
+            <div class="col-sm-7">
+              <!-- <input type="text" class="form-control" id="authAddress" placeholder=""> -->
+              <textarea name="apreaddress" id="" cols="30" rows="5"></textarea>
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="authperAddress" class="col-sm-2 col-form-label"> Permanent Address</label>
+            <div class="col-sm-7">
+              <textarea name="aperaddress" id="" cols="30" rows="5"></textarea>
+            </div>
+          </div>
+
+
+          <div class="form-group row">
+            <label for="authCountry" class="col-sm-2 col-form-label">Country</label>
+            <div class="col-sm-7">
+              <input type="text" class="form-control" name="acountry" id="authCountry" placeholder="">
+            </div>
+          </div>
+
+          <div class="form-group row">
+            <label for="authCity" class="col-sm-2 col-form-label">City</label>
+            <div class="col-sm-7">
+              <input type="text" class="form-control" name="acity" id="authCity" placeholder="">
+            </div>
+          </div>
+
+          <!-- <div class="form-group row">
+                      <label for="authState" class="col-sm-2 col-form-label">State</label>
+                      <div class="col-sm-7">
+                        <input type="text" class="form-control" id="authState" placeholder="">
+                      </div>
+                      </div> -->
+
+          <div class="form-group row">
+            <label for="authPostCode" class="col-sm-2 col-form-label">Post Code</label>
+            <div class="col-sm-7">
+              <input type="text" class="form-control" name="apostcode" id="authPostCode" placeholder="">
+            </div>
+          </div>
+          <div>
+            <label for="primaryPic ">Upload Picture</label>
+            <div class="custom-file col-sm-4">
+
+              <input type="file" class="custom-file-input" name="apicture" id="validatedCustomFile">
+              <label class="custom-file-label" for="validatedCustomFile">Choose file...</label>
+              <div class="invalid-feedback">Example invalid custom file feedback</div>
+            </div>
+            <label for="primarySig">Upload Signature</label>
+            <div class="custom-file col-sm-4">
+
+              <input type="file" class="custom-file-input" name="asignature" id="validatedCustomFile">
+              <label class="custom-file-label" for="validatedCustomFile">Choose file...</label>
+              <div class="invalid-feedback">Example invalid custom file feedback</div>
+            </div>
+
+            <label for="primarynid">Upload Nid Photo</label>
+            <div class="custom-file col-sm-4">
+
+              <input type="file" class="custom-file-input" name="anidpicture" id="validatedCustomFile">
+              <label class="custom-file-label" for="validatedCustomFile">Choose file...</label>
+              <div class="invalid-feedback">Example invalid custom file feedback</div>
+            </div>
+
+          </div>
+          <!-- 
+                <div class="form-group row">
+                  <label for="authCountry" class="col-sm-2 col-form-label">Country</label>
+                  <div class="col-sm-7">
+                    <input type="text" class="form-control" id="authCountry" placeholder="">
+                  </div>
+                  </div>
+
+                <div class="form-group row">
+                  <label for="authCity" class="col-sm-2 col-form-label">City</label>
+                  <div class="col-sm-7">
+                    <input type="text" class="form-control" id="authCity" placeholder="">
+                  </div>
+                  </div>
+
+                  <div class="form-group row">
+                      <label for="authState" class="col-sm-2 col-form-label">State</label>
+                      <div class="col-sm-7">
+                        <input type="text" class="form-control" id="authState" placeholder="">
+                      </div>
+                      </div>
+
+                      <div class="form-group row">
+                          <label for="authPostCode" class="col-sm-2 col-form-label">Post Code</label>
+                          <div class="col-sm-7">
+                            <input type="text" class="form-control" id="authPostCode" placeholder="">
+                          </div>
+                          </div> -->
+        </div>
+      </div>
+      <!-- end authorized person info -->
+
+
+
+      <!-- Introducer info -->
+      <!-- <div class="container border border-primary mt-1 divbg">
+
+                  <h6>Introducer Information</h6>
+                  <div class="form-group row">
+                      <label for="introId" class="col-sm-2 col-form-label">Introducer ID</label>
+                      <div class="col-sm-7">
+                        <input type="id"  class="form-control" id="introId" value="ID">
+                      </div>
+                  </div>
+
+                    <div class="form-group row">
+                      <label for="introName" class="col-sm-2 col-form-label">Introducer Name</label>
+                      <div class="col-sm-7">
+                        <input type="text" class="form-control" id="introName" placeholder="Name">
+                      </div>
+                    </div>
+
+                    <div class="form-group row">
+                      <label for="introContact" class="col-sm-2 col-form-label">Introducer Contact</label>
+                      <div class="col-sm-7">
+                        <input type="text"  class="form-control" id="authmother" placeholder="Mother's Name">
+                      </div>
+                    </div>
+
+                    <div class="form-group row">
+                      <label for="introEmail" class="col-sm-2 col-form-label">Email</label>
+                      <div class="col-sm-7">
+                        <input type="text" class="form-control" id="introEmail" placeholder="Email">
+                      </div>
+                    </div>
+              </div> -->
+
+      <!-- Bank Info -->
+      <div class="container border border-primary mt-1 divbg">
+        <h6>Bank Details</h6>
+        <div class="form-group row">
+          <label for="bankCode" class="col-sm-2 col-form-label">Bank Code</label>
+          <div class="col-sm-7">
+            <input type="number" class="form-control" name="bcode" id="bankCode" value="Code">
+          </div>
+        </div>
+
+        <div class="form-group row">
+          <label for="BankBranchCode" class="col-sm-2 col-form-label">Bank Branch Code</label>
+          <div class="col-sm-7">
+            <input type="number" class="form-control" name="bbcode" id="BankBranchCode" placeholder="Brach Code">
+          </div>
+        </div>
+
+        <div class="form-group row">
+          <label for="routingNum" class="col-sm-2 col-form-label">Routing Number</label>
+          <div class="col-sm-7">
+            <input type="number" class="form-control" name="brcode" id="routingNum" placeholder="Routing Num">
+          </div>
+        </div>
+
+        <div class="form-group row">
+          <label for="accNum" class="col-sm-2 col-form-label">Account Number</label>
+          <div class="col-sm-7">
+            <input type="number" class="form-control" name="banumber" id="accNum" placeholder="Account Number">
+          </div>
+        </div>
+
+        <!-- </div>
+                    <div class="container mt-1 btn1">
+                      <button type="button" class="btn btn-outline-success btn-lg btn-block">Submit</button>
+                    </div> -->
+      </div>
+
+      <!-- terms and condition -->
+
+      <div class="container">
+        <h6 class="termstitle">DECLARATION/AGREEMENT</h6>
+
+        <p id="dots">I/ We the undersigned whose information is given in the Brokerage Application Form hereby
+          request to be registered as a client of
+          LankaBangla Securities Limited, to open a brokerage account in my/our/company name. I/We further agree and
+          confirm that
+          the account hereby requested to be opened by me/us shall be held and be governed by the terms and
+          conditions of this agreement
+          as provided hereinafter and as may be modified from time to time by LankaBangla Securities Limited and
+          that I /we/company name
+          have/has the necessary authority and permission to enter this agreement.</br>
+        <h6 class="termstitle">TERMS AND CONDITIONS</h6>
+        </br>
+
+        Instruction: A written instruction shall be given to LankaBangla Securities Limited from time to time to
+        purchase and /or sell
+        investments (which shall mean and include stocks, debentures, mutual funds and private placement or any
+        other similar financial
+        instrument as may be made available from time to time) on behalf of the account holder. On receipt of such
+        instructions along with
+        a cash deposit or delivery of shares, LankaBangla Securities Limited shall, so far as LankaBangla Securities
+        Limited considers it
+        reasonably practicable, purchase and/or sell investments in accordance with those instructions, provided
+        always that (I) any such
+        dealings do not contravene any applicable laws or regulations; (II) LangkaBangla Securities Limited shall
+        have an absolute
+        discretion to accept or reject purchase/sell instructions and (III) accounts holder's instruction shall
+        include the following details:</br>
+        <ol>
+          <li>The name of the investment.</li>
+          <li>Quantity</li>
+          <li>Price with notification of limit or discretion.</li>
+          <li>The duration of the order.</li>
+          <li>The nature of the lot (i.e. scrip size) for sale or the desired format for purchase order (See Note
+            below).</li>
+        </ol>
+        </br>
+        (Note: The number of shares constituting a "market lot" may change. Sellers must include the exact format of
+        their holding. This
+        has a direct impact on market pricing given the predominantly retail nature of the market. Trades may fail
+        where non -agreed lot
+        sizes are delivered).
+        Joint Accounts: If this is a joint account, unless the account holders notify LankaBangla Securities Limited
+        otherwise and provide
+        such documentation as LankaBangla Securities Limited may require at its sole discretion, the brokerage
+        account(s) shall be held
+        by the account holders jointly with rights or survivorship (payable to either or the survivor). Under these
+        terms and conditions each
+        joint account holder irrevocably appoints the other as attorney in fact to take all action on his or her
+        behalf and to represent him or
+        her in all respects in connection with this agreement. LankaBangla Securities Limited shall be fully
+        protected and indemnified in
+        acting but shall not be required to act upon the instruction of either of the account holder, who shall be
+        liable, jointly or severally, for
+        any amounts due to LankaBangla Securities Limited pursuant to this agreement, whether incurred by either
+        both of the account
+        holders.</br>
+
+        (TERMS AND CONDITIONS FOR OPENING A BROKERAGE ACCOUNT)</br>
+
+        Risk: The account holder understand(s) that the stock market is a rapidly changing market and that there is
+        an inherent risk in
+        incurring loss in share dealings, which LankaBangla Securities Limited, is not in any way whatsoever liable
+        and/or responsible for
+        the share dealings of the account holder.
+        Limit Orders: While LankaBangla Securities Limited will endeavor to purchase or sell the investment within
+        the limits of the prices
+        that may be notified by the account holder, LankaBangla Securities Limited does not guarantee or assure that
+        the transactions will
+        be mate realized on such notified limits, LankaBangla Securities Limited will always endeavor to obtain the
+        best price.</br>
+
+        <b>Joint Accounts:</b>If this is a joint account, unless the account holders notify LankaBangla Securities
+        Limited otherwise and provide
+        such documentation as LankaBangla Securities Limited may require at its sole discretion, the brokerage
+        account(s) shall be held
+        by the account holders jointly with rights or survivorship (payable to either or the survivor). Under these
+        terms and conditions each
+        joint account holder irrevocably appoints the other as attorney in fact to take all action on his or her
+        behalf and to represent him or
+        her in all respects in connection with this agreement. LankaBangla Securities Limited shall be fully
+        protected and indemnified in
+        acting but shall not be required to act upon the instruction of either of the account holder, who shall be
+        liable, jointly or severally, for
+        any amounts due to LankaBangla Securities Limited pursuant to this agreement, whether incurred by either
+        both of the account
+        holders.</br>
+
+
+
+        <b>Risk: </b>The account holder understand(s) that the stock market is a rapidly changing market and that
+        there is an inherent risk in
+        incurring loss in share dealings, which LankaBangla Securities Limited, is not in any way whatsoever liable
+        and/or responsible for
+        the share dealings of the account holder.</br>
+
+        <b>Limit Orders:</b> While LankaBangla Securities Limited will endeavor to purchase or sell the investment
+        within the limits of the prices
+        that may be notified by the account holder, LankaBangla Securities Limited does not guarantee or assure that
+        the transactions will
+        be mate realized on such notified limits, LankaBangla Securities Limited will always endeavor to obtain the
+        best price.</p>
+        <!-- <button class="btn" onclick="myFunction()" id="myBtn">Read more</button> -->
+      </div>
+
+      <!-- <div class="form-check container">
+                      <input class="form-check-input" type="checkbox" value="" id="invalidCheck" >
+                      <label class="form-check-label" for="invalidCheck">
+                        Agree to terms and conditions
+                      </label>
+                      <div class="invalid-feedback">
+                        You must agree before submitting.
+                      </div>         
+                  </div> -->
+
+      <div class="container mt-2 d-flex">
+        <div class="container mt-1">
+          <button class="btn btn-primary" type="submit">Create Account</button>
+        </div>
+
+      </div>
+    </form>
+
+    
+   
+
+    <!-- Bootstrap JS bundle -->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>

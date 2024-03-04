@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+  <style>
+    body {
+      background-color: rgb(211, 237, 223);
+
+    }
+
+    .divbg {
+      background: rgba(216, 228, 228, 0.3);
+
+    }
+
+    .img {
+      height: 100px;
+
+    }
+
+    .boText {
+      text-align: center;
+      color: rgb(227, 227, 227);
+    }
+
+    #more {
+      display: none;
+    }
+  </style>
+
+  <title>BO Account Opening Form</title>
+</head>
+
+<body>
+
+      <!-- Navigation Bar -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Lanka Bangla</a>
+        <button class="navbar-toggler" type="" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link" href="index.html">Home</a>
+            <!-- <a class="nav-item nav-link" href="accountOpeningForm.html">Account Opening Form</a> -->
+            <!-- <a class="nav-item nav-link" href="boForm.html">BO Form</a> -->
+            <a class="nav-item nav-link" href="creditFacilityForm.html">Credit Facility Form</a>
+            <a class="nav-item nav-link" href="eftForm.html">EFT Form</a>
+            <a class="nav-item nav-link" href="kyc.html">KYC Profile Form</a>
+            <a class="nav-item nav-link" href="valueAddedService.html">Value Added Service Form</a>
+            <a class="nav-item nav-link" href="#">Logout</a>
+          </div>
+        </div>
+      </nav>
+       <!-- end navbar -->
+
+
+
+
+
+
+  <br>
+
+
+  <form action="bo.php" method="post">
+
+    <div class="container border border-danger rounded mt-3">
+
+      <h3 style="background-color: chocolate;" class="boText">BO Account Opening Form</h3>
+      <h6 style="text-align: center;">Please complete all details in CAPITAL letters. Please fill all names correctly. All
+        communications shall be sent only to the First
+        Named Account Holder's correspondence address.</h6>
+  
+    </div>
+    <!-- <div class="container border border-danger rounded mt-3">
+      <br>
+      <h6 style="text-align:left;">Application...</h6>
+      <input type="text" class="form-control" id="clientname" value="">
+      <h6 style="text-align: left;">Date:<div class="form-check">
+          <input class="form-check-input" type="date" value="" id="individual"><br>
+          <label class="form-check-label" for="defaultCheck1"></label>
+        </div>
+      </h6>
+    </div> -->
+
+ 
+
+
+
+    <!-- <div class="container border border-primary d-flex justify-content-between mt-3 divbg" >
+            <div>
+                <h6>Please Tick whichever is</h6>
+                <h6>BO Category:</h6>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="individual">
+                    <label class="form-check-label" for="defaultCheck1">Regular</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="joint">
+                    <label class="form-check-label" for="defaultCheck2">Omnibus</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="company">
+                    <label class="form-check-label" for="defaultCheck3">Cleaning</label>
+                </div>
+            </div>
+
+            <div>
+                <br>
+                <br>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="cash">
+                    <label class="form-check-label" for="defaultCheck1">BO type</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="margin">
+                    <label class="form-check-label" for="defaultCheck2">Individual</label>
+                </div>
+            </div>
+            <div>
+              
+          <br>
+          <br>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="regular">
+                    <label class="form-check-label" for="defaultCheck1">company</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="clearing">
+                    <label class="form-check-label" for="defaultCheck2">Joint holder</label>
+                </div>
+            </div>
+
+    </div>
+   
+    <div class="container border border-primary mt-1 divbg">
+        <h6>Name of CDBL Participant : LankaBangla Securities Ltd.</h6>
+        <div class="form-group row">
+            <label for="clientname" class="col-sm-2 col-form-label">CDBL Participant ID</label>
+            <div class="col-sm-7">
+              <input type="text"  class="form-control" id="clientname" value="">
+            </div>
+          </div>
+
+          <div class="form-group row">
+            <label for="fatherName" class="col-sm-2 col-form-label">BO ID</label>
+            <div class="col-sm-7">
+              <input type="text" class="form-control" id="fatherName" placeholder="">
+            </div>
+          </div>
+
+          <div class="form-group row">
+            <label for="mother" class="col-sm-2 col-form-label">Date Account Opened</label>
+            <div class="col-sm-7">
+              <input type="text"  class="form-control" id="mother" placeholder="">
+            </div>
+          </div>
+
+
+
+    </div>
+    
+    <h6 style="text-align: center;">I / WE request you to open a Depository Account in my / our name as per the following details :</h6>
+    
+    <div class="container border border-danger rounded mt-3">
+      <br>
+    <h5 style="background-color: chocolate;">1.First applicant</h5>
+    
+    
+        <h6>Name in Full of Account<br> Short Name of Account Holder (Insert full name starting with Title i.e. Mr./Mrs./Ms/Dr, abbreviate only if over
+          30 characters)</h6>
+        <div class="form-group row">
+            <label for="secondClientname" class="col-sm-2 col-form-label"></label>
+            <div class="col-sm-7">
+              <input type="text"  class="form-control" id="secondClientclientname" value=" ">
+            </div>
+          </div>
+          <h6>(In case of a Company/Firm/Statutory Body) name of Contact Person :--------------</h6>
+          <input type="text"  class="form-control" id="clientname" value=" name of contact person">
+          <h6>In Case of Individual : &nbsp;Male   &nbsp;Female     &nbsp;   Occupation <input type="text"  class="form-control" id="clientname" value="Occupation"> <br>Father's / Husband's Name : <input type="text"  class="form-control" id="clientname" value="Father /Husband's name"><br>Mother's Name :<input type="text"  class="form-control" id="clientname" value="Mother's name"></h6>
+          
+    </div></div>
+    <br> -->
+
+    <div class="container border border-danger rounded mt-3">
+      <h5 style="background-color: chocolate;">2. Contact Details</h5>
+
+
+
+
+      <h6>
+        
+        <br>
+        city-:<input type="text" name="bcity" class="form-control" id="clientname" value="">&nbsp;
+        post code: <input type="text" name="bpost" class="form-control" id="clientname" value="">&nbsp;
+        state/division&nbsp;<input type="text" name="state" class="form-control" id="clientname" value="">
+        country:<input type="text" class="form-control" name="country" id="clientname" value="country">&nbsp;
+        telephone:<input type="text" name="tel" class="form-control" id="clientname" value="">&nbsp;
+          fax<input type="text" name="fax" class="form-control" id="clientname" value="">
+        <!-- email<input type="text" class="form-control" id="clientname" value="email"> </h6> -->
+    </div><br>
+
+
+
+    </div>
+    <div class="container border border-danger rounded mt-3">
+      <h5 style="background-color: chocolate;">3. Passport Details</h5>
+
+
+      <br>
+      <h6>Passport No<input type="text" name="passno" class="form-control" id="clientname" value=""> 
+        Issue Place <input type="text" name="issueplace" class="form-control" id="clientname" value="">
+        Issue Date :<input type="date" name="issuedate" class="form-control" id="clientname" value=""> Expiry Date<input type="date" name="expirydate" class="form-control" id="clientname" value="Expiry date"></h6>
+    </div><br>
+
+    <!-- <div class="container border border-danger rounded mt-3">
+    <h5 style="background-color: chocolate;">4. Bank Details</h5>
+    
+
+      <br> -->
+
+    <!-- delete from -->
+    <!-- <h6>Bank Name<input type="text"  class="form-control" id="clientname" value="Bank name"> Branch Name-<input type="text"  class="form-control" id="clientname" value="Branch name"> Account No<input type="text"  class="form-control" id="clientname" value="Account no."> Routing No<input type="text"  class="form-control" id="clientname" value="Routing no."></h6> 
+      
+        
+            
+            <h6>Electronic Dividend Credit :</h6>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="individual">
+                <label class="form-check-label" for="defaultCheck1">Yes</label>
+                <br>
+                <input class="form-check-input" type="checkbox" value="" id="joint">
+                <label class="form-check-label" for="defaultCheck2">No</label>
+            </div>
+            <h6>Tax Exemption if any :</h6>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="individual">
+                <label class="form-check-label" for="defaultCheck1">Yes</label>
+                <br>
+                <input class="form-check-input" type="checkbox" value="" id="joint">
+                <label class="form-check-label" for="defaultCheck2">No</label>
+                <h6>Tin/TAX ID :---------</h6>
+            </div>
+    </div></div>
+            <br>
+            <div class="container border border-danger rounded mt-3">
+            <h5 style="background-color: chocolate;">5. Others Information</h5>
+            
+    
+      <h6>Residency</h6>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="individual">
+        <label class="form-check-label" for="defaultCheck1">Residen</label>
+        <br>
+        <input class="form-check-input" type="checkbox" value="" id="joint">
+        <label class="form-check-label" for="defaultCheck2">Non Reside</label>
+        <h6>Nationality-<input type="text"  class="form-control" id="clientname" value="Nationality"></h6>
+        
+        <input="text-align: right;>Date Of Birth:<div class="form-check">
+          <input class="form-check-input" type="date" value="" id="individual">
+          <label class="form-check-label" for="defaultCheck1">Date:</label>
+      </div>
+          </div>
+
+          <div class="form-group row">
+            <label for="routingNum" class="col-sm-2 col-form-label"></label>
+            <h6>Statement Cycle Code &nbsp;</h6>
+            <br>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="individual">
+              <label class="form-check-label" for="defaultCheck1">Daily</label>
+              <div class="form-check"></div>
+              <input class="form-check-input" type="checkbox" value="" id="individual">
+              <label class="form-check-label" for="defaultCheck1">Weekly</label>
+              <div class="form-check"></div>
+              <input class="form-check-input" type="checkbox" value="" id="individual">
+              <label class="form-check-label" for="defaultCheck1">Fortnighly</label>
+              <div class="form-check"></div>
+              <input class="form-check-input" type="checkbox" value="" id="individual">
+              <label class="form-check-label" for="defaultCheck1">Monthly</label>
+              <div class="form-check"></div>
+              <input class="form-check-input" type="checkbox" value="" id="individual">
+              <label class="form-check-label" for="defaultCheck1">Other(please specify)</label>
+            
+          </div>
+          
+          </div>
+          <h6 style="text-align: left;">Internal Ref. No (To be filled in by CDBL Partic)<br>
+            In case of Company :</h6>
+            <h6 >Date of Registration :</h6>
+            <h6>Registration No :</h6>
+
+          </div></div><br>
+          <div class="container border border-danger rounded mt-3">
+          <h5 style="background-color: chocolate;">6. Joint Applicant (Second Account Holder)</h5>
+          
+            <br>
+            <h6>Name in Full<input type="text"  class="form-control" id="clientname" value="Type full name"><br>
+              Short Name of Account Holder (Insert full name starting with Title i.e. Mr./Mrs./Ms/Dr, abbreviate only if over 30 characters) <input type="text"  class="form-control" id="clientname" value="Insert full name"> <br>&nbsp;Title i.e. Mr./Mrs./Ms</h6> 
+      </div></div>
+<br>
+<div class="container border border-danger rounded mt-3">
+      <h5 style="background-color: chocolate;">7. Account Link Request</h5>
+    
+
+      <div class="form-check">
+        <h6>Would you like to create a link to your existing Depository Account
+          If yes, then please provide the Depository BO Account Code (8 Digits)</h6>
+        <input class="form-check-input" type="checkbox" value="" id="individual">
+        <label class="form-check-label" for="defaultCheck1">Yes</label>
+      </div>
+      <div class="form-check">
+        
+        <input class="form-check-input" type="checkbox" value="" id="individual">
+        <label class="form-check-label" for="defaultCheck1">No</label>
+      </div>
+      
+    </div></div><br>
+
+    <div class="container border border-danger rounded mt-3">
+    <h5 style="background-color: chocolate;">8. Nominees/Heirs</h5>
+         
+
+            
+            <h6>If account holder(s) wish to continue nominate person(s) who will be entitled to receive securities outstanding in the account in the event
+              of the death of the sole account holder/all the joint account holders, a separate nomination Form-23 must be filled up and signed by all
+              account holders and the nominees giving names of nominees, relationship with first account holder, percentage distribution and contact
+              details, if any nominee is a minor, gurdian's name, address, relationship with nominees has also to be provided.</h6> 
+      </div></div>
+      <div class="container border border-danger rounded mt-3">
+      <h5 style="background-color: chocolate;">9. Power of Attorney (POA)</h5>
+          
+
+            
+            <h6>If account holder (s) wish to give a Power of Attorney (POA) to someone to operate the account, a separate Form-20 must be filled up and
+              signed by all account holders giving the name, contact details etc. of the POA holder and a POA document lodged with the form.</h6> 
+      </div></div><br>
+      <div class="container border border-danger rounded mt-3">
+      <h5 style="background-color: chocolate;">10.To be filled in by the Stock Broker/Stock Exchange in case the application is for opening a Cle</h5>
+    
+            <h6>Exchange Nam</h6>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="individual">
+                <label class="form-check-label" for="defaultCheck1">DSE</label><h6>Training ID</h6>
+                <br>
+                <input class="form-check-input" type="checkbox" value="" id="joint">
+                <label class="form-check-label" for="defaultCheck2">CSE</label><h6>Trading ID</h6></div>
+    </div></div><br>
+    <div class="container border border-danger rounded mt-3">
+    <h5 style="background-color: chocolate;">11. Photograph</h5>
+    
+
+      <br><h2>Upload  Photo</h2>
+      <form action="upload.php" method="post" enctype="multipart/form-data">
+          <label for="photos">Choose  photo:</label>
+          <input type="file" name="photos[]" id="photos" accept="image/*" multiple>
+          <input type="submit" value="Upload">
+      </form>
+       </div></div>
+       <br>
+       <div class="container border border-danger rounded mt-3">
+       <h5 style="background-color: chocolate;">12. Standing Instructions</h5>
+          
+
+            <div class="form-check">
+              <h6> I/We authorize you to receive facsimile (fax) transfer instruction for delivery.</h6>
+              <input class="form-check-input" type="checkbox" value="" id="individual">
+              <label class="form-check-label" for="defaultCheck1">Yes</label>
+            </div>
+            <div class="form-check">
+              
+              <input class="form-check-input" type="checkbox" value="" id="individual">
+              <label class="form-check-label" for="defaultCheck1">No</label>
+            </div>
+            
+          </div>
+             
+      </div>
+      </div></div><br>
+      <div class="container border border-danger rounded mt-3">
+      <h5 style="background-color: chocolate;">13. DECLARATION</h5>
+          
+
+            
+            <h6>The rules and regulations of the Depository and CDBL participant pertaining to an account which are in force now have been read by
+              me/us and I/we have understood the same and I/we agree to abide by and to be bound by the rules as are in force from time to time for
+              such account. I/We also declare that the particulars given by me/us are true to the best of my/our knowledge as on the date of making such
+              application. I/We further agree that any false/misleading information given by me/us or suppression of any material fact will render my/our
+              account liable for termination and further action.</h6> 
+      </div></div><br>
+       
+      <div class="container border border-danger rounded mt-3">
+      <h5 style="background-color: chocolate;">14. Special Instructions on operation of Joint Account</h5>
+    
+
+      <div class="form-check">
+        <h6>Would you like to create a link to your existing Depository Account
+          If yes, then please provide the Depository BO Account Code (8 Digits)</h6>
+        <input class="form-check-input" type="checkbox" value="" id="individual">
+        <label class="form-check-label" for="defaultCheck1">Either or survivor</label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="individual">
+        <label class="form-check-label" for="defaultCheck1">Anyone Can Operate</label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="individual">
+        <label class="form-check-label" for="defaultCheck1">Any two will operate jointly with any one of the others.</label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="individual">
+        <label class="form-check-label" for="defaultCheck1">Account will be operated by</label>
+      </div>
+      
+    </div></div><br> -->
+
+
+    <!-- delete there -->
+
+    <div class="container border border-danger rounded mt-3">
+      <h5 style="background-color: chocolate;">15. Introduction</h5>
+
+
+      <h6>Introduction by an existing account holder of LankaBangla Securities Ltd.
+        I confirm the identity, occupation and address of the applicant(s)</h6>
+      <!-- <h6 style="text-align: center;"><input type="text" class="form-control" id="clientname" value="Introducer name">
+      </h6> -->
+      <h6 style="text-align: center;">Introducer ID</h6>
+      <h6 style="text-align: center;"> <input type="text" name="introducerid" class="form-control" id="clientname" value=""></h6>
+
+      <!-- <h6 style="text-align: center;">Account ID</h6>
+
+      <h6 style="text-align: center;">(Signature of Introducer)</h6>
+      <h6><input type="text" class="form-control" id="clientname" value="Signature"></h6> -->
+    </div>
+    </div><br>
+
+
+
+
+    </div>
+    <div class="container mt-1">
+      <button class="btn btn-primary" type="submit">Submit form</button>
+    </div>
+
+
+
+
+
+  </form>
+
+  <script>
+    function myFunction() {
+
+      var dots = document.getElementById("dots");
+      //var moreText = document.getElementById("more");
+      var btnText = document.getElementById("myBtn");
+      if (dots.style.display != "none") {
+        para.style.display = "none";
+      }
+      else {
+        para.style.display = "block";
+
+      }
+    }
+  </script>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
